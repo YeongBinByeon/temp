@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>write</title>
+</head>
+<body>
+    test
+    <br>
+
+    <table border="1">
+        <th>MainAction</th>
+        <th>Count</th>
+        <th>Percent(%)</th>
+        {% for i,j,k in dataFrame %}
+        <tr>
+        <td>{{i}}</td>
+        <td>{{j}}</td>
+        <td>{{k}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
