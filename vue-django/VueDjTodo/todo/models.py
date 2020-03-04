@@ -12,3 +12,13 @@ class Todo(models.Model):
         if not self.name:
             self.name = "홍길동"
         super().save()
+
+class MainActionStatics(models.Model):
+    date = models.DateField('date')
+    tv_search_title = models.IntegerField('tv_search_title')
+    tv_unknown_search = models.IntegerField('tv_unknown_search')
+    tv_open_search = models.IntegerField('tv_open_search')
+    tv_play_title = models.IntegerField('tv_play_title')
+    
+    def __str__(self):
+        return self.todo
