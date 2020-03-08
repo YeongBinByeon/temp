@@ -20,5 +20,4 @@ class MainActionStatics(models.Model):
     tv_open_search = models.IntegerField('tv_open_search')
     tv_play_title = models.IntegerField('tv_play_title')
     
-    def __str__(self):
-        return self.todo
+    
